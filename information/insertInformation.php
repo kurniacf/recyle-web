@@ -17,7 +17,7 @@ if (!empty($_POST['title_information'])) {
     $tools_materials = $_POST['tools_materials'];
 
     $query = "INSERT INTO information(title_information, description_information, link_video, step_information, tools_materials) 
-        VALUES ('$title_information', '$description_information', '$link_video', '$step_information', '$tools_materials')";
+        VALUES ('$title_information', '$description_information', '$link_video', '$step_information', ARRAY['$tools_materials'])";
 
     $insert = pg_query($connect, $query);
 
