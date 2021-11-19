@@ -24,6 +24,7 @@ if (!empty($_POST['title_information'])) {
     if ($insert) {
         set_response(true, "Success Create Information");
     } else {
+        http_response_code(400);
         set_response(false, "Failed Create Information");
     }
 } else {

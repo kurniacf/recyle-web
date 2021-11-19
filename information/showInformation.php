@@ -20,9 +20,9 @@ if (pg_num_rows($get) > 0) {
     while ($row = pg_fetch_assoc($get)) {
         $data[] = $row;
     }
-
     set_response(true, "Information Found", $data);
 } else {
+    http_response_code(404);
     set_response(false, "Information Not Found", $data);
 }
 
