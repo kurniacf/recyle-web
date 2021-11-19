@@ -27,7 +27,7 @@ if (!empty($_POST['title_information'])) {
         set_response(false, "Failed Create Information");
     }
 } else {
-    http_response_code(404);
+    http_response_code(400);
     set_response(false, "Dont Empty!!");
 }
 
