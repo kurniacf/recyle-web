@@ -6,3 +6,6 @@ CREATE TABLE information(
     step_information TEXT,
     tools_materials TEXT[]
 );
+
+ALTER TABLE information 
+    ADD COLUMN image_information VARCHAR;
