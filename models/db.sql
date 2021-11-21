@@ -19,3 +19,11 @@ CREATE TABLE users(
     name_user VARCHAR(255) NOT NULL,
     password VARCHAR(255) NOT NULL
 );
+
+CREATE TABLE storage(
+    id_storage SERIAL PRIMARY KEY,
+    id_user INTEGER,
+    name_storage VARCHAR(255),
+    count_storage INTEGER,
+    progress_complete_storage INTEGER
+);
