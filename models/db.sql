@@ -9,3 +9,6 @@ CREATE TABLE information(
 
 ALTER TABLE information 
     ADD COLUMN image_information VARCHAR;
+
+ALTER TABLE information 
+    ADD COLUMN coin_information INTEGER;

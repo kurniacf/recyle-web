@@ -15,9 +15,11 @@ if (!empty($_POST['title_information'])) {
     $link_video = $_POST['link_video'];
     $step_information = $_POST['step_information'];
     $tools_materials = $_POST['tools_materials'];
+    $image_information = $_POST['coin_information'];
+    $coin_information = $_POST['coin_information'];
 
-    $query = "INSERT INTO information(title_information, description_information, link_video, step_information, tools_materials) 
-        VALUES ('$title_information', '$description_information', '$link_video', '$step_information', ARRAY['$tools_materials'])";
+    $query = "INSERT INTO information(title_information, description_information, link_video, step_information, tools_materials, image_information, coin_information) 
+        VALUES ('$title_information', '$description_information', '$link_video', '$step_information', ARRAY['$tools_materials'], '$image_information', '$coin_information')";
 
     $insert = pg_query($connect, $query);
 
