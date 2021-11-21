@@ -12,3 +12,10 @@ ALTER TABLE information
 
 ALTER TABLE information 
     ADD COLUMN coin_information INTEGER;
+
+CREATE TABLE users(
+    id SERIAL PRIMARY KEY,
+    email_user VARCHAR(191) NOT NULL,
+    name_user VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
